@@ -1,31 +1,41 @@
-# Basic GraphQL server with Express
+# A **very** basic GraphQL server with Express
 
 A very basic example of how to create a GraphQL server with Express.
 
 This project uses the `esm` package to utilise the latest ES6 syntax. 
 
+You can test the application by sending a `hello` GraphQL query, like below:
 
-Install nodemon:
+```graphql
+{
+    hello
+}
+```
 
-    npm i -g nodemon
+You should expect a response of:
+
+```graphql
+{
+  "data": {
+    "hello": "Hello world!"
+  }
+}
+```
+
+## Run the application
 
 Install dependencies:
 
     npm i
 
-Start by: 
+Start server: 
 
     npm start
 
-Access at:
-
+Access GraphiQL at:
 http://localhost:1337/api
 
 
-Lazystart:
+### Lazystart:
 
-    git clone git@github.com:krynv/graphql-express-server && npm i -g nodemon && npm i && npm start
-
-Tutorial at:
-
-https://codingthesmartway.com/creating-a-graphql-server-with-node-js-and-express/
+    git clone git@github.com:krynv/graphql-express-server && npm i && npm start
