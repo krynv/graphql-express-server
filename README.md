@@ -1,5 +1,7 @@
 # A **very** basic GraphQL server with Express
 
+[![CircleCI](https://circleci.com/gh/krynv/graphql-express-server/tree/master.svg?style=svg)](https://circleci.com/gh/krynv/graphql-express-server/tree/master)
+
 A very basic example of how to create a GraphQL server with Express.
 
 This project uses the `esm` package to utilise the latest ES6 syntax. 
