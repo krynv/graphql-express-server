@@ -36,6 +36,7 @@ jobs:
       # run tests!
       # get server up and running in the background
       - run: 
+        name: Start Server
         command: npm start
         background: true
       # wait for the server to start responding. We expect Bad Request 400 once it starts listening.
