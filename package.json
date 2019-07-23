@@ -7,8 +7,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "nodemon -r esm server.js",
+        "test": "mocha test/*.test.js"
     },
     "author": "Vitaliy Krynytskyy <Vitaliy.Krynytskyy@gmail.com>",
     "license": "ISC",
@@ -18,6 +18,11 @@
         "express": "^4.17.1",
         "express-graphql": "^0.9.0",
         "graphql": "^14.4.2",
-        "nodemon": "^1.19.1"
+        "nodemon": "^1.19.1",
+        "supertest": "^4.0.2"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^6.2.0"
     }
 }
