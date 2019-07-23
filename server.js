@@ -1,19 +1,19 @@
-const express = require('express');
-const graphqlHTTP = require('express-graphql');
-const graphql = require('graphql');
-const cors = require('cors');
+import express from 'express';
+import graphqlHTTP from 'express-graphql';
+import { GraphQLObjectType, GraphQLString, GraphQLSchema } from 'graphql';
+import cors from 'cors';
 
-const QueryRoot = new graphql.GraphQLObjectType({
+const QueryRoot = new GraphQLObjectType({
     name: 'Query',
     fields: () => ({
         hello: {
-            type: graphql.GraphQLString,
+            type: GraphQLString,
             resolve: () => "Hello world!"
         }
     })
 });
 
-const schema = new graphql.GraphQLSchema({ query: QueryRoot });
+const schema = new GraphQLSchema({ query: QueryRoot });
 
 const app = express();
 

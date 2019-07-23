@@ -1,5 +1,10 @@
 # Basic GraphQL server with Express
 
+A very basic example of how to create a GraphQL server with Express.
+
+This project uses the `esm` package to utilise the latest ES6 syntax. 
+
+
 Install nodemon:
 
     npm i -g nodemon
