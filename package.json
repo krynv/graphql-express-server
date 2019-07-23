@@ -1,18 +1,23 @@
 {
     "name": "graphql-express-server",
+    "repository": {
+        "url": "https://github.com/krynv/graphql-express-server"
+    },
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon server.js",
+        "start": "nodemon -r esm server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "author": "Vitaliy Krynytskyy <Vitaliy.Krynytskyy@gmail.com>",
     "license": "ISC",
     "dependencies": {
         "cors": "^2.8.5",
+        "esm": "^3.2.25",
         "express": "^4.17.1",
         "express-graphql": "^0.9.0",
-        "graphql": "^14.4.2"
+        "graphql": "^14.4.2",
+        "nodemon": "^1.19.1"
     }
 }
