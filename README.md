@@ -14,7 +14,7 @@ Start by:
 
 Access at:
 
-http://localhost:1337/graphql
+http://localhost:1337/api
 
 
 Lazystart:
