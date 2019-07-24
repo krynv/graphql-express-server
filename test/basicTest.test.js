@@ -11,7 +11,7 @@ describe('GraphQL', () => {
             .expect(200)
             .end((err, res) => {
                 if (err) return done(err);
-                expect(res.body.data.hello).to.contain('Hello world!');
+                expect(res.body.data.hello).to.contain('aaa');
                 done();
             });
     });
