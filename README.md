@@ -24,6 +24,10 @@ You should expect a response of:
 }
 ```
 
+## How GraphQL Works
+
+![GraphQL Diagram](graphql-vs-rest-api.jpg)
+
 ## Run the application
 
 Install dependencies:
